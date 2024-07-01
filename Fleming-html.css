@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+    /* border: 2px solid red !important;  */
+}
+
+.sec1scale {
+    background-image: url(./slide-v1-1.jpg);
+    animation-name: bg-img-scale;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bg-img-scale {
+    0% {
+        transform: scale(1.1);
+    }
+
+    30% {
+        background-image: url(./slide-v1-2.jpg);
+        animation-delay: 2s;
+        background-position: center top;
+    }
+
+    60% {
+        background-image: url(./slide-v1-3.jpg);
+        background-position: center bottom;
+        animation-delay: 2s;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+.fb-icon:hover {
+    background-color: #FCA817;
+    cursor: pointer;
+}
+
+.fb-icon:hover>i {
+    color: black;
+}
+
+.navbtn {
+    z-index: 1;
+}
+
+nav>i:hover {
+    background-color: white;
+    color: #FCA817;
+    cursor: pointer;
+}
+
+.navbtn::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background: #040404;
+    height: 100%;
+    left: 50%;
+    top: 0px;
+    visibility: hidden;
+    color: white;
+    border-radius: 30px;
+    transition-duration: 1s;
+    z-index: -1;
+}
+
+.navbtn2::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background: #FCA817;
+    height: 100%;
+    left: 50%;
+    top: 0px;
+    visibility: hidden;
+    color: black;
+    border-radius: 30px;
+    transition-duration: 1s;
+    z-index: -1;
+}
+
+.navbtn:hover::after {
+    visibility: visible;
+    transition-duration: 1s;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.navbtn:hover {
+    color: white;
+}
+
+.navbtn2:hover {
+    color: black;
+}
+
+.homeli::before {
+    position: absolute;
+    content: '';
+    background-color: #4c4c56be;
+    height: 0px;
+    top: -30px;
+    width: 70px;
+    transition-duration: 0.5s;
+    z-index: -1;
+}
+
+.homeli:hover::before {
+    height: 140px;
+    cursor: pointer;
+}
+
+.mainul>li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.homeli .dropdown1 {
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    visibility: hidden;
+    transition-duration: 0.2s;
+}
+
+.homeli:hover .dropdown1 {
+    visibility: visible;
+    cursor: pointer;
+}
+
+.dropdown1>li {
+    position: relative;
+}
+
+.dropli::after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    background-color: rgba(250, 70, 232, 0.616);
+    top: 0px;
+    height: 45px;
+    left: -30%;
+    transition: all 900ms;
+    -webkit-transition: all 900ms;
+    transition-duration: 1s;
+
+}
+
+.homeli ul>li:hover::after {
+    width: 100%;
+    left: 100%;
+    background-color: transparent;
+}
+
+.dot-img-move {
+    animation-name: dot-img-move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dot-img-move {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+.h1-animation {
+    position: absolute;
+    animation-name: h1-animate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes h1-animate {
+    0% {
+        top: -70%;
+    }
+
+    50% {
+        top: 10%;
+    }
+
+    60% {
+        top: 10%;
+    }
+
+    80% {
+        top: 10%;
+    }
+
+    100% {
+        top: -70%;
+    }
+}
+
+.btn-animation {
+    position: absolute;
+    animation-name: btn-animate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes btn-animate {
+    0% {
+        bottom: -70%;
+    }
+
+    50% {
+        bottom: 10%;
+    }
+
+    60% {
+        bottom: 10%;
+    }
+
+    80% {
+        bottom: 10%;
+    }
+
+    100% {
+        bottom: -70%;
+    }
+}
+
+/* <!---------Sec1 End ----------> */
+/* <!---------Sec3 Start --------> */
+.card1:hover img {
+    transform: rotatey(180deg);
+}
+
+.lines-move {
+    position: absolute;
+    animation-name: line-img-move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line-img-move {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.right-lines-move {
+    position: absolute;
+    animation-name: right-line-img-move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes right-line-img-move {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* <!---------Sec4 Start --------> */
+/* .grey-img:hover{
+    transform: scale(1.1);
+
+} */
+
+
+.before::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    content: '';
+    width: 50px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.517);
+    border-radius: 50%;
+    -webkit-transform: translate(-100%, -100%);
+    transform: translate(-100%, -100%);
+    opacity: 0;
+    z-index: 10;
+    visibility: hidden;
+
+}
+
+.before:hover::before {
+    transition-duration: 2s;
+    visibility: visible;
+    top: 0%;
+    left: 0%;
+    width: 500px;
+    height: 500px;
+    opacity: 1;
+}
+
+.thm-shape {
+    position: relative;
+    animation-name: thm-shape-move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes thm-shape-move {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.grid-div>div{
+    border: 1px solid red;
+}
+.portfolio-img-div:hover .zoom-div{
+    width: 130px;
+    visibility: visible;
+    height: 130px;
+}
+.portfolio-img-div:hover .zoom-div>i{
+    font-size: 50px;
+}
+.stroke-h1{
+    color: transparent;
+    -webkit-text-stroke: 2px #ffffff;
+}
+
+.thm-shape-2 {
+    animation-name: thm-shape-move-2;
+    
+}
+
+@keyframes thm-shape-move-2 {
+    0% {
+        transform: scale(1);
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+        transform: rotate(10deg);
+
+    }
+}
+.shade-div{
+    opacity: 0;
+    transition-duration: 1s;
+
+}
+.shade-div:hover{
+    opacity: 0.6;
+}
+.shade-div:hover img{
+    left: 0px;
+    bottom: 0px;
+}
+.fb-icon-div{
+    transition-duration: 1s;
+    height: 0px;
+    
+}
+
+.ceo-card:hover .fb-icon-div{
+    visibility: visible;
+    transform: rotate('90deg');
+    height: 60px;
+}
+.ceo-card:hover .fb-icon-div>i{
+    font-size: 30px; 
+}
+/* <!---------Sec8 Start --------> */
+
+.clipy-story-div{
+    clip-path: polygon(45% 0, 60% 0, 60% 45%, 53% 30%, 45% 44%);
+    position: absolute;
+    right: -30%;
+    background-color: #FCA817;
+}
+ .shade-div-2{
+    opacity: 1;
+}
+.news-img-div-2:hover .shade-div-2{
+    opacity: 1;
+}
+
+/* <!-------Sec10 Start -------> */
+.numbers-div:hover{
+    border: 2px solid #FCA817;
+}
+
+/* <!-------Sec11 Start -------> */
+.clients-h1{
+    color: transparent;
+    -webkit-text-stroke: 1px black ;
+}
+
+/* <!-------Sec12 Start -------> */
+
+.line-shape-move {
+    position: absolute;
+    animation-name: line-shape-move;
+    animation-duration: 7s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes line-shape-move {
+    0% {
+       left: 0%;
+    }
+
+    50% {
+        left: 30%;
+    }
+
+    100% {
+        left: 0%;
+
+    }
+}
+/* <!-------Sec13 Start -------> */
+.sec13{
+    background-blend-mode: darken;
+}
+
+.insta-before::before{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background-color: #fca817b1;
+    left: 50%;
+    top: 50%;
+    transition-duration: 1s;
+    z-index: 1;
+}
+.insta-before:hover::before{
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+
+}
